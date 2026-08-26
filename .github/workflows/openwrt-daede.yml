@@ -61,7 +61,7 @@ jobs:
 
       - name: Check file sizes
         run: |
-          ls -lh makeself/openwrt-daede_*.run
+          ls -lh makeself/daede_*.run
 
       - name: Preparing release name
         run: |
