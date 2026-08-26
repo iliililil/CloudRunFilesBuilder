@@ -115,9 +115,9 @@ jobs:
       - name: Create self-extracting packages
         run: |
           cd makeself
-          ./makeself.sh x86/ 24_quickfile_${VERSION}_x86_64.run "by github action" ./install.sh
-          ./makeself.sh arm64/ 24_quickfile_${VERSION}_aarch64_generic.run "by github action" ./install.sh
-          ./makeself.sh a53/ 24_quickfile_${VERSION}_aarch64_cortex-a53.run "by github action" ./install.sh
+          ./makeself.sh x86/ quickfile_${VERSION}_x86_64.run "by github action" ./install.sh
+          ./makeself.sh arm64/ quickfile_${VERSION}_aarch64_generic.run "by github action" ./install.sh
+          ./makeself.sh a53/ quickfile_${VERSION}_aarch64_cortex-a53.run "by github action" ./install.sh
 
       - name: Check file sizes
         run: |
